@@ -55,11 +55,13 @@ class Command
     @result[:attachments] = [{
       fallback:"<@#{@user_id}> => <@#{target_user}> #{@amount}Ð",
       color: "good",
-      fields: [{
-        title: "such tipping #{@amount}Ð wow!",
-        value: "http://dogechain.info/tx/#{tx}",
-        short: false
-      },{
+      fields: [
+      #{
+      #  title: "such tipping #{@amount}Ð wow!",
+      #  value: "#{@coin_config_module::TIP_POSTTEXT1}#{tx}",
+      #  short: true
+      #},
+       {
         title: "generous shibe",
         value: "<@#{@user_id}>",
         short: true
@@ -68,9 +70,9 @@ class Command
         value: "<@#{target_user}>",
         short: true
       }]
-    }] 
-    
-    @result[:text] += " (<#{@coin_config_module::TIP_POSTTEXT1}#{tx}#{@coin_config_module::TIP_POSTTEXT2}>)"
+    }]
+
+    @result[:text] += " (<#{@coin_config_module::TIP_POSTTEXT1}#{tx}.htm#{@coin_config_module::TIP_POSTTEXT2}>)"
   end
 
   alias :":dogecoin:" :tip
@@ -94,10 +96,10 @@ class Command
 
   def set_amount
     amount = @params.shift
-    @amount = amount.to_i
+    @amount = amount.to_f
     randomize_amount if (@amount == "random")
-    
-    raise @coin_config_module::TOO_POOR_TEXT unless available_balance >= @amount + 1
+
+    raise @coin_config_module::TOO_POOR_TEXT unless available_balance >= @amount + 0.01
     raise @coin_config_module::NO_PURPOSE_LOWER_BOUND_TEXT if @amount < @coin_config_module::NO_PURPOSE_LOWER_BOUND
   end
 
@@ -122,7 +124,7 @@ class Command
   end
 
   def commands
-    
+
     @result[:text] = "#{ACTIONS.join(', ' )}"
   end
 
