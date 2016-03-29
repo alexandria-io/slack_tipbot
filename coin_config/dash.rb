@@ -1,6 +1,6 @@
 module Dash
   PERFORM_ERROR = 'Even I have no idea what I mean by that. That error doesn\'t exist'
-  BALANCE_REPLY_PRETEXT = 'Your tip balance: '
+  BALANCE_REPLY_PRETEXT = 'Your tip yar contains: '
   CURRENCY_ICON = 'Ð'
   WEALTHY_UPPER_BOUND = 5
   WEALTHY_UPPER_BOUND_POSTTEXT = ' very wealthy!'
@@ -10,10 +10,10 @@ module Dash
   DEPOSIT_POSTTEXT = 'this is your address'
   TIP_ERROR_TEXT = 'pls say tip @username amount'
   TIP_PRETEXT = 'So generous!'
-  TIP_POSTTEXT1 = 'https://chainz.cryptoid.info/dash'
+  TIP_POSTTEXT1 = 'https://chainz.cryptoid.info/dash/tx.dws?'
   TIP_POSTTEXT2 = '| view on blockchain'
   WITHDRAW_TEXT = 'You\'re stingy'
-  WITHDRAW_ICON = ':shit:'
+  WITHDRAW_ICON = ':money_with_wings:'
   NETWORKINFO_ICON = ':bar_chart:'
   TOO_POOR_TEXT = 'Too poor, add some Dash to the tipbot.'
   NO_PURPOSE_LOWER_BOUND_TEXT = 'Too small. No purpose'

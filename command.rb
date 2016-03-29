@@ -62,16 +62,16 @@ class Command
       #  short: true
       #},
        {
-        title: "generous shibe",
+        title: "generous Dash user",
         value: "<@#{@user_id}>",
         short: true
       },{
-        title: "lucky shibe",
+        title: "lucky Dash user",
         value: "<@#{target_user}>",
         short: true
       }]
-    }]
-
+    }] 
+    
     @result[:text] += " (<#{@coin_config_module::TIP_POSTTEXT1}#{tx}.htm#{@coin_config_module::TIP_POSTTEXT2}>)"
   end
 
@@ -124,7 +124,7 @@ class Command
   end
 
   def commands
-
+    
     @result[:text] = "#{ACTIONS.join(', ' )}"
   end
 
