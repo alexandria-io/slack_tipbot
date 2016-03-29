@@ -20,4 +20,6 @@ module Zetacoin
   NO_PURPOSE_LOWER_BOUND = 1
   RANDOMIZED_EMOJI = ':black_joker:'
   NETWORK = 'zetacoin'
+  TITLE_TIPPER = 'generous shibe'
+  TITLE_TIP_RECIEVER = 'lucky shibe'
 end

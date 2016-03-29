@@ -62,11 +62,11 @@ class Command
       #  short: true
       #},
        {
-        title: "generous Dash user",
+        title: "#{@coin_config_module::TITLE_TIPPER}",
         value: "<@#{@user_id}>",
         short: true
       },{
-        title: "lucky Dash user",
+        title: "#{@coin_config_module::TITLE_TIP_RECIEVER}",
         value: "<@#{target_user}>",
         short: true
       }]

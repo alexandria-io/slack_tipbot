@@ -20,4 +20,6 @@ module Florincoin
   NO_PURPOSE_LOWER_BOUND = 1
   RANDOMIZED_EMOJI = ':black_joker:'
   NETWORK = 'florincoin'
+  TITLE_TIPPER = 'generous shibe'
+  TITLE_TIP_RECIEVER = 'lucky shibe'
 end

@@ -20,4 +20,6 @@ module Dash
   NO_PURPOSE_LOWER_BOUND = 0.1
   RANDOMIZED_EMOJI = ':black_joker:'
   NETWORK = 'Dash'
+  TITLE_TIPPER = 'generous Dash user'
+  TITLE_TIP_RECIEVER = 'lucky Dash user'
 end
