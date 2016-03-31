@@ -1,8 +1,8 @@
 module Dash
   PERFORM_ERROR = 'Even I have no idea what I mean by that. That error doesn\'t exist'
-  BALANCE_REPLY_PRETEXT = 'Your tip yar contains: '
+  BALANCE_REPLY_PRETEXT = 'Your tip jar contains: '
   CURRENCY_ICON = 'Ð'
-  WEALTHY_UPPER_BOUND = 5
+  WEALTHY_UPPER_BOUND = 2
   WEALTHY_UPPER_BOUND_POSTTEXT = ' very wealthy!'
   WEALTHY_UPPER_BOUND_EMOJI = ':moneybag:'
   BALANCE_REPLY_POSTTEXT = ' to tip'

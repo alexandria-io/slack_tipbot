@@ -52,26 +52,27 @@ class Command
 
     tx = client.sendfrom @user_id, user_address(target_user), @amount
     @result[:text] = "#{@coin_config_module::TIP_PRETEXT} <@#{@user_id}> => <@#{target_user}> #{@amount}#{@coin_config_module::CURRENCY_ICON}"
-    @result[:attachments] = [{
-      fallback:"<@#{@user_id}> => <@#{target_user}> #{@amount}Ð",
-      color: "good",
-      fields: [
-      #{
-      #  title: "such tipping #{@amount}Ð wow!",
-      #  value: "#{@coin_config_module::TIP_POSTTEXT1}#{tx}",
-      #  short: true
-      #},
-       {
-        title: "#{@coin_config_module::TITLE_TIPPER}",
-        value: "<@#{@user_id}>",
-        short: true
-      },{
-        title: "#{@coin_config_module::TITLE_TIP_RECIEVER}",
-        value: "<@#{target_user}>",
-        short: true
-      }]
-    }] 
-    
+
+#    @result[:attachments] = [{
+#      fallback:"<@#{@user_id}> => <@#{target_user}> #{@amount}Ð",
+#      color: "good",
+#      fields: [
+#      {
+#        title: "such tipping #{@amount}Ð wow!",
+#        value: "#{@coin_config_module::TIP_POSTTEXT1}#{tx}",
+#        short: true
+#      },
+#       {
+#        title: "#{@coin_config_module::TITLE_TIPPER}",
+#        value: "<@#{@user_id}>",
+#        short: true
+#      },{
+#        title: "#{@coin_config_module::TITLE_TIP_RECIEVER}",
+#        value: "<@#{target_user}>",
+#        short: true
+#      }]
+#    }] 
+
     @result[:text] += " (<#{@coin_config_module::TIP_POSTTEXT1}#{tx}.htm#{@coin_config_module::TIP_POSTTEXT2}>)"
   end
 
