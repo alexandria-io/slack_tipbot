@@ -20,6 +20,4 @@ module Litecoin
   NO_PURPOSE_LOWER_BOUND = 0.00000001
   RANDOMIZED_EMOJI = ':black_joker:'
   NETWORK = 'litecoin'
-  TITLE_TIPPER = 'generous shibe'
-  TITLE_TIP_RECIEVER = 'lucky shibe'
 end

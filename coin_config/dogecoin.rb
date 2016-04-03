@@ -20,6 +20,4 @@ module Dogecoin
   NO_PURPOSE_LOWER_BOUND = 1
   RANDOMIZED_EMOJI = ':black_joker:'
   NETWORK = 'dogecoin'
-  TITLE_TIPPER = 'generous shibe'
-  TITLE_TIP_RECIEVER = 'lucky shibe'
 end
