@@ -3,7 +3,7 @@ module Dash
   BALANCE_REPLY_PRETEXT = 'Your tip jar contains: '
   CURRENCY_ICON = 'Ð'
   WEALTHY_UPPER_BOUND = 2
-  WEALTHY_UPPER_BOUND_POSTTEXT = ' your tip jar is filling up. Consider withdraw some Dash to your wallet.'
+  WEALTHY_UPPER_BOUND_POSTTEXT = ' your tip jar is filling up. Please consider withdrawing some Dash.'
   WEALTHY_UPPER_BOUND_EMOJI = ':moneybag:'
   BALANCE_REPLY_POSTTEXT = ' to tip'
   DEPOSIT_PRETEXT = 'Make a deposit'
