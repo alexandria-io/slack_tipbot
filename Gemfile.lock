@@ -4,6 +4,7 @@ GEM
     backports (3.6.0)
     bitcoin-client (0.0.3)
       rest-client
+    daemons (1.2.3)
     diff-lcs (1.2.5)
     mime-types (2.2)
     multi_json (1.9.0)
@@ -40,6 +41,7 @@ PLATFORMS
 
 DEPENDENCIES
   bitcoin-client
+  daemons
   rspec
   sinatra
   sinatra-contrib

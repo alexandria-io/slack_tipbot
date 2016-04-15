@@ -5,3 +5,5 @@
 *.swn
 *.DS_STORE
 .gitignore
+exclude
+nohup.out

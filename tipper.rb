@@ -3,9 +3,15 @@ require "sinatra/json"
 require 'bitcoin-client'
 require './bitcoin_client_extensions.rb'
 require './command.rb'
+require 'daemons'
+
 set :bind, '0.0.0.0'
 
+
 raise "Please set SLACK_API_TOKEN" if ENV['SLACK_API_TOKEN'].nil?
+
+# Become a daemon
+#Daemons.daemonize
 
 post "/tip" do
   puts params
@@ -18,8 +24,8 @@ post "/tip" do
   rescue Exception => ex
     json text: "error: #{ex.message}", icon_emoji: ":japanese_goblin:"
   end
-end
+ end
 
-get "/" do
+ get "/" do
   "it works!"
-end
+ end
